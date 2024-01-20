@@ -1,8 +1,7 @@
+"""
+This script just runs training
+"""
 import warnings
-warnings.filterwarnings('ignore')
-warnings.simplefilter('ignore')
-
-import json
 import json
 import pandas as pd
 import requests
@@ -17,6 +16,9 @@ import mlflow
 import mlflow.sklearn
 from mlflow.tracking import MlflowClient
 
+
+warnings.filterwarnings('ignore')
+warnings.simplefilter('ignore')
 #load data
 content = requests.get("https://archive.ics.uci.edu/ml/machine-learning-databases/00275/Bike-Sharing-Dataset.zip").content
 

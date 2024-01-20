@@ -1,5 +1,5 @@
 mlflow
 pandas
 requests
-evidently
+evidently==0.2.8
 plotly
